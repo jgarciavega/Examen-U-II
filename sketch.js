@@ -5,9 +5,13 @@ const cities = [
 ];
 
 function setup() {
-  const canvas = createCanvas(1000, 500);
+  const canvas = createCanvas(windowWidth * 0.6, windowHeight * 0.7);
   canvas.parent("sketch-container");
   textSize(16);
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth * 0.6, windowHeight * 0.7);
 }
 
 function draw() {
